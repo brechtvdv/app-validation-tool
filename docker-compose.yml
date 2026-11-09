@@ -45,3 +45,7 @@ services:
       - "logging=true"
   cors:
     image: lblod/simple-cors-service
+    restart: always
+    logging: *default-logging
+    labels:
+      - "logging=true"
